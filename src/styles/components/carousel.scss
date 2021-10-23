@@ -1,0 +1,77 @@
+
+.carousel {
+  height: auto;
+
+}
+
+.flickity-viewport {
+ //height: 100% !important;
+
+}
+.project {
+  height: auto;
+
+}
+
+.img {
+  border-left-color: white;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-right-color: white;
+  border-right-style: solid;
+  border-right-width: 3px;
+}
+
+img {
+  //width: 100vw;
+  max-width: none !important;
+  height: calc(100vh - 64px);
+  width: auto;
+
+}
+
+button  {
+  top: calc(50% - 97px);
+  background-color: none;
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  font-family: 'Px Grotesk Screen';
+  font-size: 130px;
+
+
+  @media (max-width: 640px) {
+      top: calc(50% - 97px);
+      }
+
+
+}
+
+.left {
+  left: 30px;
+  mix-blend-mode: difference;
+}
+.right {
+  right: 30px;
+  mix-blend-mode: difference;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.pagination {
+  font-size: 12px;
+  position: absolute;
+  top: 8px;
+  left: 3px;
+
+  //padding-left: 10px;
+}
+.btn-autoPlay {
+  cursor: pointer;
+  font-size: 14px;
+  position: absolute;
+  top: 6px;
+  right: 3px;
+}

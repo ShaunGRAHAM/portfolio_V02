@@ -19,12 +19,14 @@
     "react-flickity-component": "^3.6.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-scroll": "^1.8.4",
     "sass-loader": "^12.1.0",
+    "styled-components": "^5.3.3",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "craco start",
     "local": "craco start",
     "build": "craco build",
     "test": "craco test",

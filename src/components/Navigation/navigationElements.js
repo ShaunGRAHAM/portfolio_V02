@@ -1,37 +1,24 @@
-/*ul, li {
-  list-style-type: none;
-}
+import styled from 'styled-components'
 
-.navigation {
+
+export const Nav = styled.div`
   width: 100vh;
-  height:6px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   z-index: 10;
-
-}
-
-.navigation-inner {
+`;
+export const NavbarContainer = styled.div`
   position: fixed;
   display: flex;
   flex-direction: row;
   left: 50%;
   transform: translate(-50%);
-}
-
-.menu {
+`;
+export const NavMenu = styled.a`
   text-decoration: none;
-  font-size: 14foopx;
-}
+  font-size: 14px;
 
-
-*/
-
-.nav-active {
-  color: lightgrey;
-}
-
-.navlink-work, .navlink-about{
-  color: black;
-}
+  &.active {
+  }
+`;

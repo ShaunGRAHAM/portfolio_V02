@@ -7,7 +7,8 @@ export const projectsData = [
       year:"2016",
       info:"Book, 220x130mm, 118p",
       description:"MER Paper Kunstahlle spring 2016 catalogue. It lists past, present and future art books published buy MER Paper Kunstahlle for 2016",
-      img:[
+      imgCover:"../../assets/COVER_IMG/MER_PAPER_IMG_COVER.jpg",
+      other:[
             "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_PCOV.jpg",
             "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_SOMMAIRE.jpg",
             "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P42.jpg",
@@ -28,6 +29,7 @@ export const projectsData = [
       year:"2016",
       info:"Catalogue & Poster, 300x230mm, 16p",
       description:"SCOT RIVES DU RHÔNE is a collection of landscapes taken in the teritorial union named SCoT des Rives du Rhônes. The geographic coordinate were kept on each photography as a reminder of what was      ",
+      imgCover:"../../assets/COVER_IMG/RIVES_DU_RHONE_IMG_COVER.jpg",
       img:[
             "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_01.jpg",
             "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_02.jpg",
@@ -46,6 +48,7 @@ export const projectsData = [
       year:"2017",
       info:"Digital Exhibition & Catalogue, 210x148mm, 40p",
       description:"Off Online Project was showcased during the 10th international Design Biennale in Saint-Etienne. The project was an experiment on the possibilities that digital spaces offers as a place to exhibit art & design",
+      imgCover:"../../assets/COVER_IMG/OOP_IMG_COVER.jpg",
       img:[
             "../../assets/03_OOP/OOP_01.jpg",
             "../../assets/03_OOP/OOP_00.jpg",
@@ -67,6 +70,7 @@ export const projectsData = [
       year:"2017",
       info:"Book, 240x160mm, 104p",
       description:"",
+      imgCover:"../../assets/COVER_IMG/ORIG_FILE_IMGCOVERS_SIZE.jpg",
       img:[
            "../../assets/04_MEMOIRE/MEMOIRE_01.jpg",
            "../../assets/04_MEMOIRE/MEMOIRE_02.jpg",
@@ -88,6 +92,7 @@ export const projectsData = [
       year:"2017",
       info:"Exhibition, Offset print Posters,",
       description:"",
+      imgCover:"../../assets/COVER_IMG/CATALOGUE_IMG_COVER.jpg",
       img:[
             "../../assets/05_CATALOGUE/CATALOGUE_01.jpg",
             "../../assets/05_CATALOGUE/CATALOGUE_02.jpg",
@@ -105,6 +110,7 @@ export const projectsData = [
       year:"2017",
       info:"Exhibition, Offset print Posters, Digital app",
       description:"",
+      imgCover:"../../assets/COVER_IMG/DIPLOME_IMG_COVER.jpg",
       img:[
             "../../assets/06_DIPLOME/DIPLOME_01.jpg",
             "../../assets/06_DIPLOME/DIPLOME_02.jpg",
@@ -123,6 +129,7 @@ export const projectsData = [
       year:"2018",
       info:"Exhibition",
       description:"Custom design lettering",
+      imgCover:"../../assets/COVER_IMG/FRANCKFORT_IMGCOVERS_SIZE.jpg",
       img:[
             "../../assets/12_FRANCFORT/BURMESSE_5.jpeg",
             "../../assets/12_FRANCFORT/BURMESSE_6.jpeg",
@@ -159,6 +166,7 @@ export const projectsData = [
       year:"2019",
       info:"Design & Dev",
       description:"",
+      imgCover:"../../assets/COVER_IMG/WWWESHSTUDIO_03_IMGCOVERS_SIZE.jpg",
       img:[
             "../../assets/08_WS_WEBSITE/WS_WEBSITE_01.jpg",
             "../../assets/08_WS_WEBSITE/WS_WEBSITE_02.jpg",
@@ -176,6 +184,7 @@ export const projectsData = [
       year:"2020",
       info:"3D design & CGI",
       description:"",
+      imgCover:"../../assets/COVER_IMG/LES_HOMMES_IMGCOVERS_SIZE.jpg",
       img:[
             "../../assets/09_LHDA_CAMDEN_LYON/COMPO_BOUCHONS_01.jpg",
             "../../assets/09_LHDA_CAMDEN_LYON/COMPO_BOUCHONS_03.jpg",
@@ -192,6 +201,7 @@ export const projectsData = [
       year:"2021",
       info:"3D design & CGI",
       description:"",
+      imgCover:"../../assets/COVER_IMG/MATERIAL_EXPLORATION_01_03_IMGCOVERS_SIZE.jpg",
       img:[
             "../../assets/10_MATERIAL_EXPLORATION_SERIES/MATERIAL_EXPLORATION_SERIES_01_02.jpg",
             "../../assets/10_MATERIAL_EXPLORATION_SERIES/MATERIAL_EXPLORATION_SERIES_01_01.jpg",
@@ -206,6 +216,23 @@ export const projectsData = [
       year:"2021",
       info:"3D design & CGI",
       description:"",
+      imgCover:"../../assets/COVER_IMG/MATERIAL_EXPLORATION_05_02_IMGCOVERS_SIZE.jpg",
+      img:[
+            "../../assets/11_MATERIAL_EXPLORATION_SERIES/MATERIAL_EXPLORATION_SERIES_06_01.jpg",
+            "../../assets/11_MATERIAL_EXPLORATION_SERIES/MATERIAL_EXPLORATION_SERIES_06_02.jpg",
+            "../../assets/11_MATERIAL_EXPLORATION_SERIES/MATERIAL_EXPLORATION_SERIES_06_03.jpg",
+          ],
+    }
+  },
+  {
+    id: 12,
+    project: {
+      title: "SATA MONO",
+      category:"Design, Typography, Type Design",
+      year:"2021",
+      info:"Type Design",
+      description:"",
+      imgCover:"../../assets/COVER_IMG/SATA_MONO_03_IMGCOVERS_SIZE.jpg",
       img:[
             "../../assets/11_MATERIAL_EXPLORATION_SERIES/MATERIAL_EXPLORATION_SERIES_06_01.jpg",
             "../../assets/11_MATERIAL_EXPLORATION_SERIES/MATERIAL_EXPLORATION_SERIES_06_02.jpg",

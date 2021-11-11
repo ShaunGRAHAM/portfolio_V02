@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Navigation from '../components/Navigation/index.js';
 import Carousel from '../components/Carousel.js';
-import Project from '../components/Project.js';
+import Project from '../components/Projects/index.js';
 import Footer from '../components/Footer.js';
 
 
@@ -15,12 +15,26 @@ const Home = () => {
       <Navigation/>
 
       <div className=" about-home-inner flex m-auto ">
-        <p className=" flex-auto text-center p-1">
+
+        <p className=" flex text-center p-1 leading-9">
           Hi, my name is Shaun, I'm a graphic designer curently living in Lyon, france.
+
+          <br/>
+          <br/>
+
+          My practice spreads accross a wide range of design fields from Print to digital.
+
+          <br/>
+          <br/>
+
+          Though the years I developed my own set of tools and skills in order to develop sustainable <br/> design solutions.
+
+          <br/>
+          <br/>
+
+          Feel free to contact me, even if it is just to say hi
         </p>
       </div>
-
-
       <Footer/>
     </div>
     );

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link as LinkS } from 'react-scroll';
 
 
 export const Nav = styled.div`
@@ -18,7 +19,4 @@ export const NavbarContainer = styled.div`
 export const NavMenu = styled.a`
   text-decoration: none;
   font-size: 14px;
-
-  &.active {
-  }
 `;

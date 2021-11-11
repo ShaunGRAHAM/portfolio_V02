@@ -48,6 +48,7 @@ const Navigation = () => {
         <NavLink to="/" exact className="px-4" activeClassName="nav-active" style={{ textDecoration: 'none' }}>
           <NavMenu > ALL</NavMenu>
         </NavLink>
+        <NavMenu> [fr/en]</NavMenu>
       </NavbarContainer>
     </Nav>
     );

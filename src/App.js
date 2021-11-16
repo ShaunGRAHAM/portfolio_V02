@@ -5,7 +5,7 @@ import Projects from './pages/Projects.js'
 import About from './pages/About.js';
 //import Projects from './pages/Projects.js';
 import Loader from './components/Loader.js';
-
+import { AnimatePresence } from 'framer-motion';
 
 
 function App () {

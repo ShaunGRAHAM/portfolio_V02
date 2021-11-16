@@ -1,7 +1,7 @@
 import react, { useState, setState, useEffect, Component  } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import { ProjectContainer, ProjectBg, ProjectInfo, ProjectNumber, ProjectDate } from './projectsElements'
-import { projectsData } from '../../data/projectsData.js';
+import { ProjectContainer, ProjectBg, ProjectData, ProjectInfo, ProjectNumber, ProjectDate } from './projectsElements'
+import { projectsDataEn } from '../../data/en/projectsDataEn.js';
 
 
  class Project extends Component {
@@ -10,7 +10,7 @@ import { projectsData } from '../../data/projectsData.js';
     super(props);
     // N’appelez pas `this.setState()` ici !
     this.state = {
-      project:{projectsData},
+      project:{projectsDataEn},
       /*totalPages: null,
       selectedPage: null,
       autoPlay: true,
@@ -29,8 +29,11 @@ render () {
 
 
 
-  /*console.log(this.state.project.projectsData[1].project.title); //Reaching to Project title
-  const thisProject = this.state.project.projectsData;
+  console.log(this.state.project.projectsDataEn.project);
+  //console.log(this.state.project.projectsDataEn[0].projects);
+  const jsonProjDataEn = JSON.stringify(projectsDataEn);
+  console.log(jsonProjDataEn); //Reaching to Project title
+  /*const thisProject = this.state.project.projectsData;
   console.log(thisProject);
 
   const thisTitle = thisProject.map((element) => {
@@ -41,24 +44,28 @@ render () {
     return element
   });
   console.log(title);*/
-const thisProject = this.state.project.projectsData;
+//const thisProject = this.state.project.projectsData;
 
   return (
     <div >
-    {this.state.project.projectsData.map((element) => {
+    {this.state.project.projectsDataEn[0].projects.map((element) => {
       return (
       <ProjectContainer >
         <ProjectBg >
           <img src={element.project.imgCover} className="object-cover object-scale-down w-full h-auto" alt=""/>
-          <ProjectNumber>
-            {element.id + 1 }
-          </ProjectNumber>
-          <ProjectInfo className=" m-auto item-center">
-            {element.project.title}
-          </ProjectInfo>
-          <ProjectDate>
-            {element.project.year}
-          </ProjectDate>
+          <ProjectData>
+
+              <ProjectNumber className=" my-auto mt-3.5 ">
+                [{element.id + 1 } / {element.id.length}]
+              </ProjectNumber>
+              <ProjectInfo className=" mt-3.5 m-auto item-center">
+                {element.project.title}
+              </ProjectInfo>
+              <ProjectDate className=" mt-3.5 my-auto ">
+                {element.project.year}
+              </ProjectDate>
+
+          </ProjectData>
         </ProjectBg>
       </ProjectContainer>
       )

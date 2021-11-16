@@ -1,7 +1,8 @@
 import React , { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Nav, NavbarContainer, NavMenu } from './navigationElements'
+import { Nav, NavbarContainer, NavMenu, ButtonLanguage } from './navigationElements'
 import { Link as LinkS, animateScroll as scroll } from 'react-scroll';
+import i18n from '../../i18n';
 
 const Navigation = () => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -31,6 +32,13 @@ const Navigation = () => {
     })
   }
 
+  const changeLanguage = (ln) => {
+    return () => {
+      i18n.changeLanguage(ln);
+      console.log(ln);
+    }
+  }
+
   return (
     <Nav  scrollNav={scrollNav} className=" mx-auto items-center">
       <NavbarContainer className=" m-auto px-6 py-2 items-center">
@@ -48,7 +56,14 @@ const Navigation = () => {
         <NavLink to="/" exact className="px-4" activeClassName="nav-active" style={{ textDecoration: 'none' }}>
           <NavMenu > ALL</NavMenu>
         </NavLink>
-        <NavMenu> [fr/en]</NavMenu>
+        <NavMenu  className="px-4"> [
+          <ButtonLanguage type="submit" onClick={changeLanguage('fr')}> fr </ButtonLanguage>
+          /
+          <ButtonLanguage type="submit" onClick={changeLanguage('en')} > en </ButtonLanguage>
+          ]
+        </NavMenu>
+
+
       </NavbarContainer>
     </Nav>
     );

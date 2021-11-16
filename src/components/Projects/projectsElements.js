@@ -4,42 +4,57 @@ import styled from 'styled-components'
   display: flex;
   width: 100%;
   height: 100%;
+  margin-left: 0.7%;
+  margin-right: 0.7%;
   `;
 
   export const ProjectBg = styled.div`
-  background-color:red;
+  background-color: red;
   display: flex;
-  width: 100%;
+  width: calc(100% - 1.4%);
   height: 100%;
   `;
 
+  export const ProjectData = styled.div`
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  background-color: white;
+  height: 40px;
+  width: 100%;
+  margin-top: 108vh;
+  `;
+
   export const ProjectInfo = styled.div`
-  z-index: 10;
+  /*z-index: 10;
   display: flex;
   position: absolute;
   margin-top: calc(102vh - 1px);
   left: 50%;
   transform: translate(-50%);
   color: lightgrey;
-  font-size: 14px;
+  font-size: 14px;*/
+  position: relative;
+  font-family: 'HelveticaNeue 65';
+  color: black;
+  font-size: 18px;
   `;
 
   export const ProjectNumber = styled.div`
-  z-index: 10;
-  display: flex;
-  position: absolute;
-  margin-top: calc(102vh - 1px);
+  position: relative;
+  /*margin-top: calc(102vh - 1px);*/
   left: 5%;
-  color: lightgrey;
-  font-size: 14px;
+  position: relative;
+  font-family: 'HelveticaNeue 65';
+  color: black;
+  font-size: 18px;
   `;
 
   export const ProjectDate = styled.div`
-  z-index: 10;
-  display: flex;
-  position: absolute;
-  margin-top: calc(102vh - 1px);
+  position: relative;
+  /*margin-top: calc(102vh - 1px);*/
   right: 5%;
-  color: lightgrey;
-  font-size: 14px;
+  font-family: 'HelveticaNeue 65';
+  color: black;
+  font-size: 18px;
   `;

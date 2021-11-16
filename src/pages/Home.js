@@ -5,12 +5,9 @@ import Carousel from '../components/Carousel.js';
 import Project from '../components/Projects/index.js';
 import Footer from '../components/Footer.js';
 
-
-
-
 const Home = () => {
-  return (
 
+  return (
     <div >
       <Navigation/>
 
@@ -18,25 +15,19 @@ const Home = () => {
 
         <p className=" flex text-center p-1 leading-9">
           Hi, my name is Shaun, I'm a graphic designer curently living in Lyon, france.
-
-          <br/>
-          <br/>
-
+            <br/><br/>
           My practice spreads accross a wide range of design fields from Print to digital.
-
-          <br/>
-          <br/>
-
-          Though the years I developed my own set of tools and skills in order to develop sustainable <br/> design solutions.
-
-          <br/>
-          <br/>
-
-          Feel free to contact me, even if it is just to say hi
+            <br/><br/>
+          Though the years I developed my own set of tools and skills in order to develop sustainable
+            <br/>
+          design solutions.
+            <br/><br/>
+          Feel free to contact me, even if it is just to say hi"
         </p>
       </div>
       <Footer/>
     </div>
     );
-}
+  }
+
 export default Home;

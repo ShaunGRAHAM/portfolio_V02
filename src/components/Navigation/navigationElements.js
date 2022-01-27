@@ -7,7 +7,7 @@ export const Nav = styled.div`
   margin-left: auto;
   margin-right: auto;
   align-items: center;
-  z-index: 10;
+  z-index: 1000;
 `;
 
 export const NavbarContainer = styled.div`
@@ -16,15 +16,17 @@ export const NavbarContainer = styled.div`
   flex-direction: row;
   left: 50%;
   transform: translate(-50%);
+  z-index: 1000;
 `;
 
 export const NavMenu = styled.a`
   text-decoration: none;
   font-size: 14px;
+  color: lightgrey;
 `;
 
 export const ButtonLanguage = styled.button`
   position: relative;
-  color: black;
+  color: lightgrey;
   font-size: 14px;
 `;

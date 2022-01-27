@@ -1,26 +1,25 @@
-export const projectsDataEn =[
-  { about: "Hi, my name is Shaun, I'm a graphic designer curently living in Lyon, france.<br/><br/>My practice spreads accross a wide range of design fields from Print to digital.<br/><br/>Though the years I developed my own set of tools and skills in order to develop sustainable <br/> design solutions.<br/><br/>Feel free to contact me, even if it is just to say hi",
-    projects: [
+export const projectsDataEn =
+                  [
                     {
 
                       id: 0,
                       project: {
                         title: "MER PAPER KUNSTHALLE BOOKLET",
-                        category: "Design & Editorial",
+                        category: "Editorial Design",
                         year:"2016",
-                        info:"Book, 220x130mm, 118p",
-                        description:"MER Paper Kunstahlle spring 2016 catalogue. It lists past, present and future art books published buy MER Paper Kunstahlle for 2016",
+                        info:"220x130mm, 118p",
+                        description:"MER Paper Kunstahlle spring 2016 catalogue. It lists past, present and future art books published buy MER Paper Kunstahlle for 2016 and 2017",
                         imgCover:"../../assets/COVER_IMG/MER_PAPER_IMG_COVER.jpg",
-                        other:[
-                              "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_PCOV.jpg",
-                              "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_SOMMAIRE.jpg",
-                              "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P42.jpg",
-                              "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P44.jpg",
-                              "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P58.jpg",
-                              "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P60.jpg",
-                              "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P86.jpg",
-                              "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P59.jpg",
-                              "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_PBCOVER.jpg",
+                        img:[
+                               "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_COUV.jpg",
+                               "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_SOMMAIRE.jpg",
+                               "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P42.jpg",
+                               "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P44.jpg",
+                               "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P58.jpg",
+                               "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P60.jpg",
+                               "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P86.jpg",
+                               "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P110.jpg",
+                               "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P116.jpg",
                             ],
                       }
                     },
@@ -28,18 +27,23 @@ export const projectsDataEn =[
                       id: 1,
                       project: {
                         title: "SCOT RIVES DU RHÔNE",
-                        category: "Photography, Design & Editorial",
+                        category: "Editorial Design & Photography",
                         year:"2016",
                         info:"Catalogue & Poster, 300x230mm, 16p",
-                        description:"SCOT RIVES DU RHÔNE is a collection of landscapes taken in the teritorial union named SCoT des Rives du Rhônes. The geographic coordinate were kept on each photography as a reminder of what was      ",
+                        description:"SCoT rives du Rhônes is a collection of landscapes taken in the teritorial union named SCoT des Rives du Rhônes. The geographic coordinate were kept on each photography as a reminder of what was      ",
                         imgCover:"../../assets/COVER_IMG/RIVES_DU_RHONE_IMG_COVER.jpg",
                         img:[
                               "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_01.jpg",
                               "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_02.jpg",
                               "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_03.jpg",
                               "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_04.jpg",
-                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_06.jpg",
                               "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_05.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_06.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_07.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_08.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_09.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_10.jpg",
+
                             ],
                         }
                     },
@@ -54,11 +58,14 @@ export const projectsDataEn =[
                         imgCover:"../../assets/COVER_IMG/OOP_IMG_COVER.jpg",
                         img:[
                               "../../assets/03_OOP/OOP_01.jpg",
-                              "../../assets/03_OOP/OOP_00.jpg",
-                              "../../assets/03_OOP/COVER_OOP.jpg",
+                              "../../assets/03_OOP/COVER_OOP_01.jpg",
+                              "../../assets/03_OOP/COVER_OOP_02.jpg",
+                              "../../assets/03_OOP/COMPO-SOM_V02.jpg",
                               "../../assets/03_OOP/OOP_02.jpg",
                               "../../assets/03_OOP/OOP_03.jpg",
                               "../../assets/03_OOP/OOP_04.jpg",
+                              "../../assets/03_OOP/OOP_04_01.jpg",
+                              "../../assets/03_OOP/OOP_08.jpg",
                               "../../assets/03_OOP/OOP_05.jpg",
                               "../../assets/03_OOP/OOP_06.jpg",
                               "../../assets/03_OOP/OOP_07.jpg",
@@ -84,6 +91,10 @@ export const projectsDataEn =[
                              "../../assets/04_MEMOIRE/MEMOIRE_09.jpg",
                              "../../assets/04_MEMOIRE/MEMOIRE_10.jpg",
                              "../../assets/04_MEMOIRE/MEMOIRE_11.jpg",
+                             "../../assets/04_MEMOIRE/MEMOIRE_12.jpg",
+                             "../../assets/04_MEMOIRE/MEMOIRE_13.jpg",
+                             "../../assets/04_MEMOIRE/MEMOIRE_14.jpg",
+                             "../../assets/04_MEMOIRE/MEMOIRE_15.jpg",
                             ],
                         }
                     },
@@ -237,14 +248,11 @@ export const projectsDataEn =[
                         description:"",
                         imgCover:"../../assets/COVER_IMG/SATA_MONO_03_IMGCOVERS_SIZE.jpg",
                         img:[
-                              "../../assets/11_MATERIAL_EXPLORATION_SERIES/MATERIAL_EXPLORATION_SERIES_06_01.jpg",
-                              "../../assets/11_MATERIAL_EXPLORATION_SERIES/MATERIAL_EXPLORATION_SERIES_06_02.jpg",
-                              "../../assets/11_MATERIAL_EXPLORATION_SERIES/MATERIAL_EXPLORATION_SERIES_06_03.jpg",
+                              "../../assets/13_SATA_MONO/SATA_MONO_01.jpg",
+                              "../../assets/13_SATA_MONO/SATA_MONO_02.jpg",
+                              "../../assets/13_SATA_MONO/SATA_MONO_03.jpg",
+                              "../../assets/13_SATA_MONO/SATA_MONO_04.jpg",
                             ],
                       }
                     }
   ]
- }
-]
-export const jsonProjDataEn = JSON.stringify(projectsDataEn);
-

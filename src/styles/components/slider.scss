@@ -1,0 +1,22 @@
+.previous {
+height: 100%;
+width: 50%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 100;
+//background-color: red;
+//opacity: 0.1;
+}
+
+.next {
+height: 100%;
+width: 50%;
+position: absolute;
+top: 0;
+right: 0;
+z-index: 100;
+//background-color: red;
+//opacity: 0.1;
+}
+

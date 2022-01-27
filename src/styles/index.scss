@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+//-----------------LYNO-------------------------------//
+
+@font-face {
+    font-family: "LynoUlys";
+    src: url('../assets/fonts/LynoUlys.woff') format('woff');
+    font-style: normal;
+}
+
 //-----------------PX GROTESK------------------------//
 
 @font-face {

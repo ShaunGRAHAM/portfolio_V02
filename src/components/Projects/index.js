@@ -1,7 +1,10 @@
 import react, { useState, setState, useEffect, Component  } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import { ProjectContainer, ProjectBg, ProjectData, ProjectInfo, ProjectNumber, ProjectDate } from './projectsElements'
+import { ProjectContainer, ProjectBg, ProjectElmts, ProjectData, ProjectInfo, ProjectNumber, ProjectYear, ProjectPrimary, ProjectSecondary, ProjectDescribtion, ProjectDetails, ProjectCategory, ProjectDataTop, ProjectDataBottom, ProjectDimensions } from './projectsElements'
 import { projectsDataEn } from '../../data/en/projectsDataEn.js';
+
+import { motion, AnimatePresence } from 'framer-motion';
+import Slider from '../Slider/index.js';
 
 
  class Project extends Component {
@@ -11,28 +14,31 @@ import { projectsDataEn } from '../../data/en/projectsDataEn.js';
     // N’appelez pas `this.setState()` ici !
     this.state = {
       project:{projectsDataEn},
+      showHideProjectDetails: false,
       /*totalPages: null,
       selectedPage: null,
       autoPlay: true,
       btnPause: "⑴",*/
     };
   }
+showHideComponent = () => {
+  this.setState({
+    showHideProjectDetails: !this.state.showHideProjectDetails
+  });
 
-getProjectTitle = () => {
-  const thisProject = this.state.project.projectsData;
-  const thisTitle = thisProject.map((element) => {
-       return element.project.title
-    });
 }
 
 render () {
 
+  //console.log(this.state.project.projectsDataEn.project);
 
-
-  console.log(this.state.project.projectsDataEn.project);
   //console.log(this.state.project.projectsDataEn[0].projects);
-  const jsonProjDataEn = JSON.stringify(projectsDataEn);
-  console.log(jsonProjDataEn); //Reaching to Project title
+
+//---------CONVERT_DATA_FILE_TO_JSON-----------------//
+  //const jsonProjDataEn = JSON.stringify(projectsDataEn);
+  //console.log(jsonProjDataEn); //Reaching to Project title
+
+
   /*const thisProject = this.state.project.projectsData;
   console.log(thisProject);
 
@@ -46,26 +52,81 @@ render () {
   console.log(title);*/
 //const thisProject = this.state.project.projectsData;
 
-  return (
-    <div >
-    {this.state.project.projectsDataEn[0].projects.map((element) => {
-      return (
-      <ProjectContainer >
-        <ProjectBg >
-          <img src={element.project.imgCover} className="object-cover object-scale-down w-full h-auto" alt=""/>
-          <ProjectData>
+  const indexTotal = this.state.project.projectsDataEn.length;
+  console.log(indexTotal);
 
-              <ProjectNumber className=" my-auto mt-3.5 ">
-                [{element.id + 1 } / {element.id.length}]
+const projectDetails = this.state.project.projectsDataEn.map((element) => {
+  return element.project.img
+});
+console.log(projectDetails);
+
+
+//console.log(projectDetailsImg);
+  return (
+    <div className="flex flex-col">
+    {this.state.project.projectsDataEn.map((element) => {
+
+      return(
+      <ProjectContainer >
+        <ProjectBg  >
+            <Slider
+
+            path={element.project.img}
+            />
+
+          <ProjectElmts >
+
+            <ProjectPrimary className="py-1">
+
+             <ProjectNumber className=" my-auto mt-3.5 ">
+                [{element.id + 1 } / {indexTotal}]
               </ProjectNumber>
+
               <ProjectInfo className=" mt-3.5 m-auto item-center">
                 {element.project.title}
+                <button className="ml-2 text-sm text-black relative" onClick={this.showHideComponent}>More</button>
               </ProjectInfo>
-              <ProjectDate className=" mt-3.5 my-auto ">
-                {element.project.year}
-              </ProjectDate>
 
-          </ProjectData>
+
+
+
+
+
+              <ProjectData className="flex flex-col">
+
+                <ProjectDataTop className="flex flex-row px-0.5 py-0.5 my-0.3">
+                  <ProjectYear className= " px-2 ">
+                    {element.project.year}
+                  </ProjectYear>
+                  <ProjectCategory className= " px-2  ">
+                    {element.project.category}
+                  </ProjectCategory>
+                  <ProjectDimensions className=" px-2 ">
+                    {element.project.info}
+                  </ProjectDimensions>
+
+                </ProjectDataTop>
+
+
+              </ProjectData>
+
+
+            </ProjectPrimary>
+
+            {this.state.showHideProjectDetails ?
+              <ProjectSecondary className="mb-1 mr-10">
+                <ProjectDetails className="pr-3">
+                {element.project.info}
+                </ProjectDetails>
+                <ProjectDescribtion className="pl-3">
+                {element.project.description}
+                </ProjectDescribtion>
+              </ProjectSecondary>
+               : "" }
+
+          </ProjectElmts>
+
+
         </ProjectBg>
       </ProjectContainer>
       )

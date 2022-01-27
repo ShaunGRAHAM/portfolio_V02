@@ -9,15 +9,15 @@ export const projectsData = [
       description:"MER Paper Kunstahlle spring 2016 catalogue. It lists past, present and future art books published buy MER Paper Kunstahlle for 2016",
       imgCover:"../../assets/COVER_IMG/MER_PAPER_IMG_COVER.jpg",
       other:[
-            "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_PCOV.jpg",
+            "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_COUV.jpg",
             "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_SOMMAIRE.jpg",
             "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P42.jpg",
             "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P44.jpg",
             "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P58.jpg",
             "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P60.jpg",
             "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P86.jpg",
-            "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P59.jpg",
-            "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_PBCOVER.jpg",
+            "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P110.jpg",
+            "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_P116.jpg",
           ],
     }
   },

@@ -76,13 +76,13 @@ console.log(projectDetails);
 
           <ProjectElmts >
 
-            <ProjectPrimary className="py-1">
+            <ProjectPrimary className="pt-1">
 
-             <ProjectNumber className=" my-auto mt-3.5 ">
+             <ProjectNumber className=" my-auto mt-0 mb-0 leading-8">
                 [{element.id + 1 } / {indexTotal}]
               </ProjectNumber>
 
-              <ProjectInfo className=" mt-3.5 m-auto item-center">
+              <ProjectInfo className=" m-auto mt-0 item-center leading-8">
                 {element.project.title}
                 <button className="ml-2 text-sm text-black relative" onClick={this.showHideComponent}>More</button>
               </ProjectInfo>
@@ -92,16 +92,16 @@ console.log(projectDetails);
 
 
 
-              <ProjectData className="flex flex-col">
+              <ProjectData className="">
 
-                <ProjectDataTop className="flex flex-row px-0.5 py-0.5 my-0.3">
-                  <ProjectYear className= " px-2 ">
+                <ProjectDataTop className="flex flex-col mt-0 mb-0 pt-1">
+                  <ProjectYear className= " px-2 leading-4">
                     {element.project.year}
                   </ProjectYear>
-                  <ProjectCategory className= " px-2  ">
+                  <ProjectCategory className= " px-2 leading-4">
                     {element.project.category}
                   </ProjectCategory>
-                  <ProjectDimensions className=" px-2 ">
+                  <ProjectDimensions className=" px-2 leading-4">
                     {element.project.info}
                   </ProjectDimensions>
 

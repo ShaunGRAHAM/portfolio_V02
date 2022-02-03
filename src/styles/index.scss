@@ -22,6 +22,17 @@
     font-display: swap;
 }
 //-----------------HELVETICA------------------------//
+
+@font-face {
+    font-family: 'HelveticaNeue 75';
+    src:
+        url('../assets/fonts/HelveticaNeueLTStd-Bd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 @font-face {
     font-family: 'HelveticaNeue 65';
     src: url('../assets/fonts/HelveticaNeueLT-Medium.woff2') format('woff2'),
@@ -40,6 +51,17 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'HelveticaNeue 45';
+    src:
+        url('../assets/fonts/HelveticaNeueLTStd-Lt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 //-----------------SUISSE INT'L MONO------------------------//
 
 @font-face {
@@ -50,6 +72,58 @@
     font-style: normal;
     font-display: swap;
 }
+
+
+
+
+//------------------SuisseIntl------------------------------//
+
+@font-face {
+    font-family: 'SuisseIntl-Regular';
+    src:
+      url('../assets/fonts/SuisseIntl-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SuisseIntl-Medium';
+    src:
+      url('../assets/fonts/SuisseIntl-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SuisseIntl-Book';
+    src:
+      url('../assets/fonts/SuisseIntl-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SuisseIntl-SemiBold';
+    src:
+      url('../assets/fonts/SuisseIntl-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SuisseIntl-Bold';
+    src:
+      url('../assets/fonts/SuisseIntl-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+//----------------------------------------------------------//
 
 html {
   height: -webkit-fill-available;

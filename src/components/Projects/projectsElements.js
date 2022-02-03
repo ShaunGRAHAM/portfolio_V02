@@ -44,14 +44,14 @@ import styled from 'styled-components'
 
   export const ProjectDescribtion = styled.div`
   font-size: 14px;
-  font-family: 'HelveticaNeue 65';
+  font-family: 'HelveticaNeue 55';
   color: lightgrey;
 
   `;
 
   export const ProjectDetails = styled.div`
   font-size: 14px;
-  font-family: 'HelveticaNeue 65';
+  font-family: 'HelveticaNeue 55';
   color: lightgrey;
   `;
 
@@ -65,9 +65,9 @@ import styled from 'styled-components'
   color: lightgrey;
   font-size: 14px;*/
   position: relative;
-  font-family: 'LynoUlys';
+  font-family: 'HelveticaNeue';
   color: black;
-  font-size: 30px;
+  font-size: 28px;
   `;
 
   export const ProjectNumber = styled.div`
@@ -75,44 +75,37 @@ import styled from 'styled-components'
   /*margin-top: calc(102vh - 1px);*/
   /*left: 5%;*/
   position: relative;
-  font-family: 'HelveticaNeue 65';
+  font-family: 'HelveticaNeue 55';
   color: black;
-  font-size: 18px;
+  font-size: 28px;
   `;
 
 
   export const ProjectData = styled.div`
-
-  border-radius: 8px;
   `;
 
   export const ProjectDataTop = styled.div`
-
-
-  `
+  `;
 
   export const ProjectYear = styled.div`
   position: relative;
   /*margin-top: calc(102vh - 1px);*/
   /*right: 5%;*/
-  font-family: 'Suisse Intl Mono v02';
+  font-family: 'HelveticaNeue 65';
   color: black;
-  font-size: 12px;
+  font-size: 14px;
   `;
 
   export const ProjectCategory = styled.div`
-  font-family: 'Suisse Intl Mono v02';
+  font-family: 'HelveticaNeue 65';
   color: black;
-  font-size: 12px;
-  border-left: solid 1px black;
-
-  `
+  font-size: 14px;
+  `;
   export const ProjectDataBottom = styled.div`
-  border-top: solid 1px black;
-  `
+  `;
+
   export const ProjectDimensions = styled.div`
-  font-family: 'Suisse Intl Mono v02';
+  font-family: 'HelveticaNeue 65';
   color: black;
-  border-left: solid 1px black;
-  font-size: 12px;
-  `
+  font-size: 14px;
+  `;

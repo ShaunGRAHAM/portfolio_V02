@@ -7,7 +7,7 @@ export const projectsDataEn =
                         title: "MER PAPER KUNSTHALLE BOOKLET",
                         category: "Editorial Design",
                         year:"2016",
-                        info:"220x130mm, 118p",
+                        info:"Booklet, 220x130mm, 118p",
                         description:"MER Paper Kunstahlle spring 2016 catalogue. It lists past, present and future art books published buy MER Paper Kunstahlle for 2016 and 2017",
                         imgCover:"../../assets/COVER_IMG/MER_PAPER_IMG_COVER.jpg",
                         img:[
@@ -25,6 +25,30 @@ export const projectsDataEn =
                     },
                     {
                       id: 1,
+                      project: {
+                        title: "7 algorithms",
+                        category: "Art direction",
+                        year:"2016",
+                        info:"7 Posters",
+                        description:"",
+                        imgCover:"../../assets/COVER_IMG/RIVES_DU_RHONE_IMG_COVER.jpg",
+                        img:[
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_01.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_02.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_03.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_04.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_05.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_06.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_07.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_08.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_09.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_10.jpg",
+
+                            ],
+                        }
+                    },
+                    {
+                      id: 2,
                       project: {
                         title: "SCOT RIVES DU RHÔNE",
                         category: "Editorial Design & Photography",
@@ -48,10 +72,10 @@ export const projectsDataEn =
                         }
                     },
                     {
-                      id: 2,
+                      id: 3,
                       project: {
                         title: "OOP - OFF ONLINE PROJECT",
-                        category: "Design & Art Direction",
+                        category: "Art Direction & Web Design",
                         year:"2017",
                         info:"Digital Exhibition & Catalogue, 210x148mm, 40p",
                         description:"Off Online Project was showcased during the 10th international Design Biennale in Saint-Etienne. The project was an experiment on the possibilities that digital spaces offers as a place to exhibit art & design",
@@ -73,10 +97,10 @@ export const projectsDataEn =
                         }
                     },
                     {
-                      id: 3,
+                      id: 4,
                       project: {
                         title: "MEMOIRE DNSEP",
-                        category: "Design & Editorial",
+                        category: "Editorial Design",
                         year:"2017",
                         info:"Book, 240x160mm, 104p",
                         description:"",
@@ -98,11 +122,36 @@ export const projectsDataEn =
                             ],
                         }
                     },
+
                     {
-                      id: 4,
+                      id: 5,
+                      project: {
+                        title: "FUTURA",
+                        category: "Editorial Design",
+                        year:"2017",
+                        info:"Posters",
+                        description:"SCoT rives du Rhônes is a collection of landscapes taken in the teritorial union named SCoT des Rives du Rhônes. The geographic coordinate were kept on each photography as a reminder of what was      ",
+                        imgCover:"../../assets/COVER_IMG/RIVES_DU_RHONE_IMG_COVER.jpg",
+                        img:[
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_01.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_02.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_03.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_04.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_05.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_06.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_07.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_08.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_09.jpg",
+                              "../../assets/02_SCOT_RIVES_DU_RHONE/SCOT_RIVES_DU_RHONES_10.jpg",
+
+                            ],
+                        }
+                    },
+                    {
+                      id: 6,
                       project: {
                         title: "PHOTGRAPHIC RUNNING JOURNAL",
-                        category: "Design & Editorial",
+                        category: "Editorial Design & Coding Experiment",
                         year:"2017",
                         info:"Exhibition, Offset print Posters,",
                         description:"",
@@ -117,7 +166,7 @@ export const projectsDataEn =
                         }
                     },
                     {
-                      id: 5,
+                      id: 7,
                       project: {
                         title: "DIPLOME DNSEP",
                         category: "Art Direction, Design & Editorial",
@@ -136,7 +185,7 @@ export const projectsDataEn =
                         }
                     },
                     {
-                      id: 6,
+                      id: 8,
                       project: {
                         title: "FRANKFURT BOOK FAIR",
                         category: "Art Direction, Design, Scenography & Typography",
@@ -157,7 +206,7 @@ export const projectsDataEn =
 
 
                     {
-                      id: 7,
+                      id: 9,
                       project: {
                         title: "IN LIMBO",
                         category: "Design & Typography",
@@ -173,13 +222,13 @@ export const projectsDataEn =
 
                     },
                     {
-                      id: 8,
+                      id: 10,
                       project: {
                         title: "WWWESH STUDIO WEB SITE",
-                        category: "Design & Development",
+                        category: "Art direction, Web design",
                         year:"2019",
-                        info:"Design & Dev",
-                        description:"",
+                        info:"",
+                        description:"Art direction and Web design for WWWesh Studio's website and webshop",
                         imgCover:"../../assets/COVER_IMG/WWWESHSTUDIO_03_IMGCOVERS_SIZE.jpg",
                         img:[
                               "../../assets/08_WS_WEBSITE/WS_WEBSITE_01.jpg",
@@ -191,7 +240,7 @@ export const projectsDataEn =
 
                     },
                     {
-                      id: 9,
+                      id: 11,
                       project: {
                         title: "LES HOMMES D'ABORD FOR CAMDEN LYON",
                         category: "Design, 3D, CGI",
@@ -208,7 +257,7 @@ export const projectsDataEn =
                       }
                     },
                     {
-                      id: 10,
+                      id: 12,
                       project: {
                         title: "MATERIAL EXPLORATION SERIES",
                         category:"Design, 3D, CGI",
@@ -223,7 +272,7 @@ export const projectsDataEn =
                       }
                     },
                     {
-                      id: 11,
+                      id: 13,
                       project: {
                         title: "MATERIAL EXPLORATION SERIES",
                         category:"Design, 3D, CGI",
@@ -239,12 +288,12 @@ export const projectsDataEn =
                       }
                     },
                     {
-                      id: 12,
+                      id: 14,
                       project: {
                         title: "SATA MONO",
-                        category:"Design, Typography, Type Design",
+                        category:"Typeface",
                         year:"2021",
-                        info:"Type Design",
+                        info:"",
                         description:"",
                         imgCover:"../../assets/COVER_IMG/SATA_MONO_03_IMGCOVERS_SIZE.jpg",
                         img:[

@@ -24,6 +24,7 @@ import Slider from '../Slider/index.js';
 showHideComponent = () => {
   this.setState({
     showHideProjectDetails: !this.state.showHideProjectDetails
+
   });
 
 }
@@ -85,6 +86,13 @@ console.log(projectDetails);
               <ProjectInfo className=" m-auto mt-0 item-center leading-8">
                 {element.project.title}
                 <button className="ml-2 text-sm text-black relative" onClick={this.showHideComponent}>More</button>
+                {this.state.showHideProjectDetails ?
+              <ProjectSecondary className="mb-1 mr-10">
+                <ProjectDescribtion className="mb-1">
+                {element.project.description}
+                </ProjectDescribtion>
+              </ProjectSecondary>
+               : "" }
               </ProjectInfo>
 
 
@@ -113,16 +121,7 @@ console.log(projectDetails);
 
             </ProjectPrimary>
 
-            {this.state.showHideProjectDetails ?
-              <ProjectSecondary className="mb-1 mr-10">
-                <ProjectDetails className="pr-3">
-                {element.project.info}
-                </ProjectDetails>
-                <ProjectDescribtion className="pl-3">
-                {element.project.description}
-                </ProjectDescribtion>
-              </ProjectSecondary>
-               : "" }
+
 
           </ProjectElmts>
 

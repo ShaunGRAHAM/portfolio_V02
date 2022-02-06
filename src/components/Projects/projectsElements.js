@@ -43,7 +43,8 @@ import styled from 'styled-components'
   `;
 
   export const ProjectDescribtion = styled.div`
-  font-size: 14px;
+  font-size: 28px;
+  line-height: 28px;
   font-family: 'HelveticaNeue 55';
   color: lightgrey;
 
@@ -72,6 +73,7 @@ import styled from 'styled-components'
 
   export const ProjectNumber = styled.div`
   position: relative;
+  width: 22%;
   /*margin-top: calc(102vh - 1px);*/
   /*left: 5%;*/
   position: relative;

@@ -79,20 +79,20 @@ console.log(projectDetails);
 
             <ProjectPrimary className="pt-1">
 
-             <ProjectNumber className=" my-auto mt-0 mb-0 leading-8">
+             <ProjectNumber className=" my-auto mt-0 mb-0 leading-8 min-w-max">
                 [{element.id + 1 } / {indexTotal}]
               </ProjectNumber>
 
-              <ProjectInfo className=" m-auto mt-0 item-center leading-8">
+              <ProjectInfo className=" m-auto ml-0 mt-0 pl-5 item-center leading-8 justify-start">
                 {element.project.title}
-                <button className="ml-2 text-sm text-black relative" onClick={this.showHideComponent}>More</button>
+                <button className="ml-2 text-sm text-black relative" onClick={this.showHideComponent}>{this.state.showHideProjectDetails ? "Less" : "More"}</button>
                 {this.state.showHideProjectDetails ?
-              <ProjectSecondary className="mb-1 mr-10">
-                <ProjectDescribtion className="mb-1">
-                {element.project.description}
-                </ProjectDescribtion>
-              </ProjectSecondary>
-               : "" }
+                <ProjectSecondary className="m-auto mb-1 ">
+                  <ProjectDescribtion className="mb-1">
+                    {element.project.description}
+                  </ProjectDescribtion>
+                </ProjectSecondary>
+                : "" }
               </ProjectInfo>
 
 
@@ -102,7 +102,7 @@ console.log(projectDetails);
 
               <ProjectData className="">
 
-                <ProjectDataTop className="flex flex-col mt-0 mb-0 pt-1">
+                <ProjectDataTop className="flex flex-col mt-0 mb-0 pt-1 min-w-max">
                   <ProjectYear className= " px-2 leading-4">
                     {element.project.year}
                   </ProjectYear>

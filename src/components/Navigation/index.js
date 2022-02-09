@@ -53,15 +53,7 @@ const Navigation = () => {
           style={{ textDecoration: 'none' }}>
           <NavMenu >WORK</NavMenu>
         </NavLink>
-        <NavLink to="/" exact className="px-4" activeClassName="nav-active" style={{ textDecoration: 'none' }}>
-          <NavMenu > ALL</NavMenu>
-        </NavLink>
-        <NavMenu  className="px-4"> [
-          <ButtonLanguage type="submit" onClick={changeLanguage('fr')}> fr </ButtonLanguage>
-          /
-          <ButtonLanguage type="submit" onClick={changeLanguage('en')} > en </ButtonLanguage>
-          ]
-        </NavMenu>
+
 
 
       </NavbarContainer>
@@ -70,3 +62,13 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
+/*<NavLink to="/" exact className="px-4" activeClassName="nav-active" style={{ textDecoration: 'none' }}>
+          <NavMenu > ALL</NavMenu>
+        </NavLink>
+        <NavMenu  className="px-4"> [
+          <ButtonLanguage type="submit" onClick={changeLanguage('fr')}> fr </ButtonLanguage>
+          /
+          <ButtonLanguage type="submit" onClick={changeLanguage('en')} > en </ButtonLanguage>
+          ]
+        </NavMenu>*/

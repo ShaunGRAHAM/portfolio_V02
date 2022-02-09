@@ -45,14 +45,16 @@ import styled from 'styled-components'
   export const ProjectDescribtion = styled.div`
   font-size: 28px;
   line-height: 28px;
-  font-family: 'HelveticaNeue 55';
-  color: lightgrey;
+  font-family: 'PublicSans';
+  font-weight: 200;
+  color: black;
 
   `;
 
   export const ProjectDetails = styled.div`
   font-size: 14px;
-  font-family: 'HelveticaNeue 55';
+  font-family: 'PublicSans';
+  font-weight: 400;
   color: lightgrey;
   `;
 
@@ -66,18 +68,20 @@ import styled from 'styled-components'
   color: lightgrey;
   font-size: 14px;*/
   position: relative;
-  font-family: 'HelveticaNeue';
+  font-family: 'PublicSans';
+  font-weight: 500;
   color: black;
   font-size: 28px;
   `;
 
   export const ProjectNumber = styled.div`
   position: relative;
-  width: 22%;
+  /*width: 22%;*/
   /*margin-top: calc(102vh - 1px);*/
   /*left: 5%;*/
   position: relative;
-  font-family: 'HelveticaNeue 55';
+  font-family: 'PublicSans';
+  font-weight: 400;
   color: black;
   font-size: 28px;
   `;

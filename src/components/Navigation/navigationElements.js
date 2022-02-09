@@ -21,12 +21,12 @@ export const NavbarContainer = styled.div`
 
 export const NavMenu = styled.a`
   text-decoration: none;
-  font-size: 14px;
-  color: lightgrey;
+  font-size: 16px;
+  color: black;
 `;
 
 export const ButtonLanguage = styled.button`
   position: relative;
-  color: lightgrey;
-  font-size: 14px;
+  color: black;
+  font-size: 16px;
 `;

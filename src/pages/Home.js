@@ -30,7 +30,7 @@ const Home = () => {
               <br/>
             design solutions.
               <br/><br/>
-            Today, I spend most of my time focused on web3 and what decentralization is changing the way we create and we work.
+            Today, I spend most of my time focused on web3 and how decentralization is changing the way we create and we work.
               <br/><br/>
             Feel free to contact me, even if it is just to say hi
           </p>

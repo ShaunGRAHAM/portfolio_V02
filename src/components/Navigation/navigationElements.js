@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import { Link as LinkS } from 'react-scroll';
 
 
@@ -21,12 +21,12 @@ export const NavbarContainer = styled.div`
 
 export const NavMenu = styled.a`
   text-decoration: none;
-  font-size: 14px;
-  color: black;
+  color: #231F20;
+  &:hover {
+    color: rgb(203, 213, 225);
+  }
 `;
 
 export const ButtonLanguage = styled.button`
   position: relative;
-  color: black;
-  font-size: 14px;
 `;

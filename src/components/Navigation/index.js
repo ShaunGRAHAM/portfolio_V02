@@ -40,18 +40,21 @@ const Navigation = () => {
   }
 
   return (
-    <Nav  scrollNav={scrollNav} className=" mx-auto items-center">
-      <NavbarContainer className=" m-auto px-6 py-2 items-center">
-        <NavLink to="/" onClick={toggleHome} exact className="px-4" activeClassName="nav-active" style={{ textDecoration: 'none' }}>
-          <NavMenu >ABOUT</NavMenu>
+    <Nav  scrollNav={scrollNav} className=" mx-auto items-center ">
+      <NavbarContainer className=" m-auto pt-4 items-center">
+        <NavLink
+          exact to="/"
+          onClick={toggleHome}
+          className="px-6 "
+          style={{ textDecoration: 'none' }}>
+          <NavMenu className="text-base" >ABOUT</NavMenu>
         </NavLink>
         <NavLink
           to='/projects'
           //onClick={toggleProject}
-          exact className="px-4"
-          activeClassName="nav-active"
+          exact className="px-6"
           style={{ textDecoration: 'none' }}>
-          <NavMenu >WORK</NavMenu>
+          <NavMenu className="text-base" >WORK</NavMenu>
         </NavLink>
 
 

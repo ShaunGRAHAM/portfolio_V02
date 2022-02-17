@@ -18,6 +18,7 @@ return (
         <div className="m-auto items-center justify-center flex flex-row">
           <FooterElements className="text-base px-6" href="mailto:shaun.o.graham@gmail.com">MAIL</FooterElements>
           <FooterElements className="text-base px-6" href="https://twitter.com/GRAHAMSHAUN3">TWITTER</FooterElements>
+          <FooterElements className="text-base px-6" href="https://orbis.club/profile/did:3:kjzl6cwe1jw145n8w7osui6aazbb3ldvsp45d3c9ohdyu20bssxnpoxkeqonmip">ORBIS</FooterElements>
         </div>
       </div>
       );

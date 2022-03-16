@@ -98,7 +98,7 @@ export const projectsDataEn =
                     {
                       id: 4,
                       project: {
-                        title: "MEMOIRE DNSEP",
+                        title: "DNSEP MEMOIRE (Diploma)",
                         category: "Editorial Design",
                         year:"2017",
                         info:"Book, 240x160mm, 104p",
@@ -165,7 +165,7 @@ export const projectsDataEn =
                     {
                       id: 7,
                       project: {
-                        title: "DIPLOME DNSEP",
+                        title: "DNSEP DIPLOMA",
                         category: "Art Direction, Design & Editorial",
                         year:"2017",
                         info:"Exhibition, Offset print Posters, Digital app",

@@ -47,14 +47,14 @@ const Navigation = () => {
           onClick={toggleHome}
           className="px-6 "
           style={{ textDecoration: 'none' }}>
-          <NavMenu className="text-base" >ABOUT</NavMenu>
+          <NavMenu className="text-sm" >ABOUT</NavMenu>
         </NavLink>
         <NavLink
           to='/projects'
           //onClick={toggleProject}
           exact className="px-6"
           style={{ textDecoration: 'none' }}>
-          <NavMenu className="text-base" >WORK</NavMenu>
+          <NavMenu className="text-sm" >WORK</NavMenu>
         </NavLink>
 
 

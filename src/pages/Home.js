@@ -24,7 +24,7 @@ const Home = () => {
             Hi, my name is Shaun, I'm a multidisciplinary designer curently living in Lyon, France.
             My practice spreads accross a wide range of design fields from Print to Digital.
             Through the years I developed my own set of tools and skills in order to develop sustainable design solutions.
-            Today, I spend most of my time focused on web3 and how decentralization is impacting the way we create and the way we work.
+            Today, I spend most of my time focused on web3 and how decentralization is impacting the way we create, we interact and the way we work.
             Feel free to contact me, even if it is just to say hi.
           </p>
         </div>

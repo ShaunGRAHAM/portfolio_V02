@@ -5,9 +5,7 @@ position: absolute;
 top: 0;
 left: 0;
 z-index: 100;
-
-//background-color: red;
-//opacity: 0.1;
+cursor: url("../../assets/navigation/previous_white.png"), auto;
 }
 
 .next {
@@ -17,17 +15,17 @@ position: absolute;
 top: 0;
 right: 0;
 z-index: 100;
-//background-color: red;
-//opacity: 0.1;
-}
-.cursor-right {
-  z-index: 100;
-  cursor: url("../../assets/navigation/next.png"), auto;
-  mix-blend-mode: exclusion;
-}
+cursor: url("../../assets/navigation/next_white.png"), auto;
 
-.cursor-left {
-  z-index: 100;
-  cursor: url("../../assets/navigation/previous.png"), auto;
-  mix-blend-mode: exclusion;
 }
+// .cursor-right {
+//   z-index: 100;
+//   cursor: url("../../assets/navigation/next.png"), auto;
+//   mix-blend-mode: exclusion;
+// }
+
+// .cursor-left {
+//   z-index: 100;
+//   cursor: url("../../assets/navigation/previous.png"), auto;
+//   mix-blend-mode: exclusion;
+// }

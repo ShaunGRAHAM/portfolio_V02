@@ -28,11 +28,11 @@ export default function Slider (props) {
 
       <>
       <motion.button
-          className="previous cursor-left"
+          className="previous"
           onClick={() => paginate(-1)}
         ></motion.button>
         <motion.button
-          className="next cursor-right"
+          className="next"
           onClick={() => paginate(+1)}
         ></motion.button>
 

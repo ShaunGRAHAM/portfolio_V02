@@ -43,8 +43,6 @@ import styled from 'styled-components'
   `;
 
   export const ProjectDescribtion = styled.div`
-  font-size: 28px;
-  line-height: 28px;
   font-family: 'PublicSans';
   font-weight: 200;
   color: black;
@@ -71,19 +69,14 @@ import styled from 'styled-components'
   font-family: 'PublicSans';
   font-weight: 500;
   color: black;
-  font-size: 28px;
+  //font-size: 28px;
   `;
 
   export const ProjectNumber = styled.div`
   position: relative;
-  /*width: 22%;*/
-  /*margin-top: calc(102vh - 1px);*/
-  /*left: 5%;*/
-  position: relative;
   font-family: 'PublicSans';
   font-weight: 400;
   color: black;
-  font-size: 28px;
   `;
 
 
@@ -95,17 +88,13 @@ import styled from 'styled-components'
 
   export const ProjectYear = styled.div`
   position: relative;
-  /*margin-top: calc(102vh - 1px);*/
-  /*right: 5%;*/
   font-family: 'HelveticaNeue 65';
   color: black;
-  font-size: 14px;
   `;
 
   export const ProjectCategory = styled.div`
   font-family: 'HelveticaNeue 65';
   color: black;
-  font-size: 14px;
   `;
   export const ProjectDataBottom = styled.div`
   `;
@@ -113,5 +102,4 @@ import styled from 'styled-components'
   export const ProjectDimensions = styled.div`
   font-family: 'HelveticaNeue 65';
   color: black;
-  font-size: 14px;
   `;

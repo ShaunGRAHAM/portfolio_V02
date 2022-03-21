@@ -19,7 +19,7 @@ const Home = () => {
       >
 
       <Navigation/>
-        <div className="about-home flex m-auto pt-10 sm:pt-12 p-4 sm:p-6">
+        <div className="about-home flex m-auto pt-16 sm:pt-12 p-4 sm:p-6">
           <p className=" flex p-1 text-2xl sm:text-5xl text-sans" >
             Hi, my name is Shaun, I'm a multidisciplinary designer curently living in Lyon, France.
             My practice spreads accross a wide range of design fields from Print to Digital.

@@ -21,10 +21,10 @@ export const NavbarContainer = styled.div`
 
 export const NavMenu = styled.a`
   text-decoration: none;
-  color: #231F20;
-  &:hover {
-    color: rgb(203, 213, 225);
-  }
+  // color: #231F20;
+  // &:hover {
+  //   color: rgb(203, 213, 225);
+  // }
 `;
 
 export const ButtonLanguage = styled.button`

@@ -16,35 +16,49 @@ import styled from 'styled-components'
   height: 100%;
   `;
 
-  export const ProjectElmts = styled.div`
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: white;
-  /*height: 40px;
-  width: 100%; */
+  // export const ProjectElmts = styled.div`
+  // display: flex;
+  // flex-direction: column;
+  // position: relative;
+  // background-color: white;
+  // /*height: 40px;
+  // width: 100%; */
 
-  `;
+  // `;
 
-  export const ProjectPrimary = styled.div`
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  background-color: white;
-  height: auto;
-  width: 100%;
-  `;
+  // export const ProjectPrimary = styled.div`
+  // // display: flex;
+  // // flex-direction: row;
+  // // position: relative;
+  // // background-color: white;
+  // // height: auto;
+  // // width: 100%;
+  // `;
 
   export const ProjectSecondary = styled.div`
   position: relative;
   display: flex;
   right; 5%;
-
+  `;
+  export const ProjectTitle = styled.div`
+  /*z-index: 10;
+  display: flex;
+  position: absolute;
+  margin-top: calc(102vh - 1px);
+  left: 50%;
+  transform: translate(-50%);
+  color: lightgrey;
+  font-size: 14px;*/
+  // position: relative;
+  // font-family: 'PublicSans';
+  font-weight: 400;
+  color: black;
+  //font-size: 28px;
   `;
 
   export const ProjectDescribtion = styled.div`
-  font-family: 'PublicSans';
-  font-weight: 200;
+  // font-family: 'PublicSans';
+  // font-weight: 200;
   color: black;
 
   `;
@@ -56,25 +70,11 @@ import styled from 'styled-components'
   color: lightgrey;
   `;
 
-  export const ProjectInfo = styled.div`
-  /*z-index: 10;
-  display: flex;
-  position: absolute;
-  margin-top: calc(102vh - 1px);
-  left: 50%;
-  transform: translate(-50%);
-  color: lightgrey;
-  font-size: 14px;*/
-  position: relative;
-  font-family: 'PublicSans';
-  font-weight: 500;
-  color: black;
-  //font-size: 28px;
-  `;
+
 
   export const ProjectNumber = styled.div`
   position: relative;
-  font-family: 'PublicSans';
+  //font-family: 'PublicSans';
   font-weight: 400;
   color: black;
   `;

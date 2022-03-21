@@ -5,27 +5,22 @@ import { wrap } from '@popmotion/popcorn';
 export default function Slider (props) {
 
   const [[page, direction], setPage] = useState([0, 0]);
-
-
   const images = props.path;
   const lengthImg = props.path.length;
-
   const imageIndex = wrap(0, lengthImg, page);
-
   const paginate = newDirection => {
       setPage([page + newDirection, newDirection])
   };
 
-  console.log({props});
-  console.log({images});
-  console.log({lengthImg});
-  console.log({imageIndex});
-  console.log({page});
-  console.log({direction});
+  // console.log({props});
+  // console.log({images});
+  // console.log({lengthImg});
+  // console.log({imageIndex});
+  // console.log({page});
+  // console.log({direction});
 
   return (
     <div className="mx-auto relative flex flex-row">
-
       <>
       <motion.button
           className="previous"
@@ -40,6 +35,7 @@ export default function Slider (props) {
 
         <motion.img
           key={page}
+          className="rounded"
           src={images[imageIndex]}
           custom={direction}
           initial={{ opacity: 0 }}

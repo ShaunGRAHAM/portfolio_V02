@@ -67,12 +67,12 @@ const projectDetails = this.state.project.projectsDataEn.map((element) => {
             path={element.project.img}
             />
           <div className="relative bg-white" >
-            <div className="flex flex-row bg-white relative w-100 h-auto py-0">
+            <div className="flex flex-row bg-white relative w-100 h-auto py-0 pb-4">
               <div className="p-1.5">
-                <div className="bg-gray-200 p-1 rounded-full my-auto mt-0 mb-0 relative min-w-max ">
-                  <ProjectNumber className=" text-sans text-sm sm:text-2xl leading-none sm:leading-8 py-0.5 px-1 ">
+                <div className="rounded-full border-solid border-2 border-black p-1 my-auto mt-0 mb-0 relative min-w-max ">
+                  <div className=" text-sans text-sm font-bold sm:text-2xl leading-none sm:leading-8 py-0.5 px-3 ">
                     {element.id + 1 }
-                  </ProjectNumber>
+                  </div>
                 </div>
               </div>
               <div className="py-1.5 pr-3">

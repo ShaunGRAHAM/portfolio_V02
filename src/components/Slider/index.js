@@ -20,19 +20,10 @@ export default function Slider (props) {
   // console.log({direction});
 
   return (
-    <div className="mx-auto relative flex flex-row">
+    <div className="mx-auto relative flex-column">
       <>
-      <motion.button
-          className="previous"
-          onClick={() => paginate(-1)}
-        ></motion.button>
-        <motion.button
-          className="next"
-          onClick={() => paginate(+1)}
-        ></motion.button>
 
-        <AnimatePresence  initial={false} custom={direction}>
-
+      <AnimatePresence  initial={false} custom={direction}>
         <motion.img
           key={page}
           className="rounded"
@@ -48,8 +39,26 @@ export default function Slider (props) {
           dragConstraints={{left: 0, right: 0}}
           dragElastic={1}
         />
-        </AnimatePresence>
-
+      </AnimatePresence>
+      <div
+        className="flex flex-row justify-between">
+        <motion.button
+            className="">
+          <text
+            onClick={() => paginate(-1)}
+            className="text-sans text-xs font-light text-black bg-white px-2">
+            PREV
+          </text>
+        </motion.button>
+        <motion.button
+            className="">
+         <text
+            onClick={() => paginate(+1)}
+            className="text-sans text-xs font-light text-black bg-white px-2">
+            NEXT
+          </text>
+        </motion.button>
+      </div>
       </>
 
     </div>

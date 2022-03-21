@@ -1,12 +1,12 @@
-.previous {
-height: 100%;
-width: 50%;
-position: absolute;
-top: 0;
-left: 0;
-z-index: 100;
-cursor: url("../../assets/navigation/previous_white.png"), auto;
-}
+// .previous {
+// height: 100%;
+// width: 50%;
+// position: absolute;
+// top: 0;
+// left: 0;
+// z-index: 100;
+// //cursor: url("../../assets/navigation/previous_white.png"), auto;
+// }
 
 .next {
 height: 100%;
@@ -15,9 +15,10 @@ position: absolute;
 top: 0;
 right: 0;
 z-index: 100;
-cursor: url("../../assets/navigation/next_white.png"), auto;
-
+//cursor: url("../../assets/navigation/next_white.png"), auto;
 }
+
+
 // .cursor-right {
 //   z-index: 100;
 //   cursor: url("../../assets/navigation/next.png"), auto;

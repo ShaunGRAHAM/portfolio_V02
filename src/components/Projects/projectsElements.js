@@ -72,12 +72,12 @@ import styled from 'styled-components'
 
 
 
-  export const ProjectNumber = styled.div`
-  position: relative;
-  //font-family: 'PublicSans';
-  font-weight: 400;
-  color: black;
-  `;
+  // export const ProjectNumber = styled.div`
+  // position: relative;
+  // //font-family: 'PublicSans';
+  // // font-weight: 400;
+  // // color: black;
+  // `;
 
 
   export const ProjectData = styled.div`

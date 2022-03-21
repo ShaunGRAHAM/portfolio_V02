@@ -12,7 +12,6 @@ import './styles/components/project.scss';
 import './styles/components/footer.scss';
 import './styles/components/projects.scss';
 import './styles/components/slider.scss';
-import './styles/pages/about.scss';
 import './styles/pages/home.scss';
 
 

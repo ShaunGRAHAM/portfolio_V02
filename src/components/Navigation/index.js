@@ -45,7 +45,7 @@ const Navigation = () => {
         <NavLink
           exact to="/"
           onClick={toggleHome}
-          className="mr-4 p-0.5 rounded-full border-solid border-2 border-black transition ease-in-out delay-150 bg-white text-black hover:bg-black hover:text-white hover:border-white duration-300"
+          className="mr-4 p-0.5 rounded-full border-solid border-2 border-black transition ease-in-out delay-150 bg-white text-black hover:bg-black hover:text-white hover:border-white duration-300 hover:translate-y-2"
           style={{ textDecoration: 'none' }}>
           <NavMenu className="text-sm font-medium p-4" >ABOUT</NavMenu>
         </NavLink>

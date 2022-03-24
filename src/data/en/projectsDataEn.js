@@ -8,7 +8,7 @@ export const projectsDataEn =
                         category: "Editorial Design",
                         year:"2016",
                         info:"Booklet, 220x130mm, 118p",
-                        description:"MER Paper Kunstahlle spring 2016 catalogue. Its a small booklet that lists past, present and future art books published by MER Paper Kunstahlle during years 2016 and 2017",
+                        description:"MER Paper Kunstahlle booklet is a small catalogue presenting MER's new publications for spring 2016 period. It does also list past, present and future art books published by MER during years 2016 and 2017",
                         imgCover:"../../assets/COVER_IMG/MER_PAPER_IMG_COVER.jpg",
                         img:[
                                "../../assets/01_MER_PAPER_KUNSTHALLE/MER_PAPER_KUNSTALLE_COUV.jpg",
@@ -306,7 +306,7 @@ export const projectsDataEn =
                     {
                       id: 14,
                       project: {
-                        title: "SATA MONO",
+                        title: "SATA MONO FOR CAMDEN LYON",
                         category:"Typeface",
                         year:"2021",
                         info:"",

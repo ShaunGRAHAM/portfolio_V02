@@ -1,9 +1,7 @@
 import React , { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Nav, NavbarContainer, NavMenu, ButtonLanguage } from './navigationElements'
+import { Nav, NavbarContainer, NavMenu } from './navigationElements'
 import { Link as LinkS, animateScroll as scroll } from 'react-scroll';
-import i18n from '../../i18n';
-
 const Navigation = () => {
   const [scrollNav, setScrollNav] = useState(false);
 
@@ -32,35 +30,25 @@ const Navigation = () => {
     })
   }
 
-  const changeLanguage = (ln) => {
-    return () => {
-      i18n.changeLanguage(ln);
-      console.log(ln);
-    }
-  }
-
   return (
-    <Nav  scrollNav={scrollNav} className=" mx-auto items-center ">
-      <NavbarContainer className=" m-auto pt-4 items-center">
+    <div  scrollNav={scrollNav} className="w-screen z-10 fixed mx-auto items-center ">
+      <div className=" flex ml-3 sm:mx-auto sm:justify-center mt-3 items-center content-center">
         <NavLink
           exact to="/"
           onClick={toggleHome}
-          className="mr-4 p-0.5 rounded-full border-solid border-2 border-black transition ease-in-out delay-150 bg-white text-black hover:bg-black hover:text-white hover:border-white duration-300 hover:translate-y-2"
+          className="flex mr-0.5 sm:mr-2 sm:py-1 rounded-full border-solid border-2 border-black transition ease-in-out delay-150 bg-white text-black hover:bg-black hover:text-white hover:border-white duration-300"
           style={{ textDecoration: 'none' }}>
-          <NavMenu className="text-sm font-medium p-4" >ABOUT</NavMenu>
+          <a className="text-xs sm:text-sm font-medium py-1 sm:py-1 px-2 sm:px-4 content-center" >ABOUT</a>
         </NavLink>
         <NavLink
           to='/projects'
           //onClick={toggleProject}
-          className="ml-4 p-0.5 rounded-full border-solid border-2 border-black active:bg-black active:text-white active:border-white transition ease-in-out delay-150 bg-white text-black hover:bg-black hover:text-white hover:border-white duration-300"
+          className="flex ml-0.5 sm:ml-2 sm:py-1 rounded-full border-solid border-2 border-black active:bg-black active:text-white active:border-white transition ease-in-out delay-150 bg-white text-black hover:bg-black hover:text-white hover:border-white duration-300"
           style={{ textDecoration: 'none' }}>
-          <NavMenu className="text-sm font-medium p-4" >WORK</NavMenu>
+          <a className="text-xs sm:text-sm font-medium py-1 sm:py-1 px-2 sm:px-4 content-center" >WORK</a>
         </NavLink>
-
-
-
-      </NavbarContainer>
-    </Nav>
+      </div>
+    </div>
     );
 };
 

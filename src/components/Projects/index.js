@@ -1,113 +1,73 @@
-import react, { useState, setState, useEffect, Component  } from 'react';
-import { Redirect, Route, Switch } from 'react-router-dom';
-import { ProjectContainer, ProjectBg, ProjectData, ProjectTitle, ProjectNumber, ProjectYear, ProjectSecondary, ProjectDescribtion, ProjectDetails, ProjectCategory, ProjectDataTop, ProjectDataBottom, ProjectDimensions } from './projectsElements'
-import { projectsDataEn } from '../../data/en/projectsDataEn.js';
+import react, { useState, setState, useEffect, Component  } from 'react'
+import { Redirect, Route, Switch } from 'react-router-dom'
+import { ProjectData, ProjectYear, ProjectSecondary, ProjectDescribtion, ProjectDetails, ProjectCategory, ProjectDataTop, ProjectDataBottom, ProjectDimensions } from './projectsElements'
+import { projectsDataEn } from '../../data/en/projectsDataEn.js'
 
-import { motion, AnimatePresence } from 'framer-motion';
-import Slider from '../Slider/index.js';
+import { motion, AnimatePresence } from 'framer-motion'
+import Slider from '../Slider/index.js'
+import DropdownMenu from '../DropdownMenu/index.js'
+import ProjectInfo from '../ToggleProjectInfo/index.js'
 
 
  class Project extends Component {
 
     constructor(props) {
     super(props);
-    // N’appelez pas `this.setState()` ici !
+
     this.state = {
-      project:{projectsDataEn},
-      showHideProjectDetails: false,
-      /*totalPages: null,
-      selectedPage: null,
-      autoPlay: true,
-      btnPause: "⑴",*/
-    };
+      allProjects:{projectsDataEn},
+      showHideProjectDescription: false,
+      isToggleOn: false,
+      displayProject: projectsDataEn[0]
+    }
   }
+
 showHideComponent = () => {
   this.setState({
-    showHideProjectDetails: !this.state.showHideProjectDetails
-
+    showHideProjectDescription: !this.state.showHideProjectDescription
   });
-
 }
 
-render () {
+handleChangeProject = (id) => {
 
-//---------CONVERT_DATA_FILE_TO_JSON-----------------//
-  //const jsonProjDataEn = JSON.stringify(projectsDataEn);
-  //console.log(jsonProjDataEn); //Reaching to Project title
+  if (!this.state.displayProject) {
+    return this.setState({
+      displayProject: this.state.allProjects.projectsDataEn[0]
+    })
+  } else {
+     this.setState({
+    displayProject: this.state.allProjects.projectsDataEn[id]
+  })
+  }
+}
 
 
-  /*const thisProject = this.state.project.projectsData;
-  console.log(thisProject);
 
-  const thisTitle = thisProject.map((element) => {
-     return element.project.title
-  });
-  console.log(thisTitle);
-  const title = thisTitle.map((element) => {
-    return element
-  });
-  console.log(title);*/
-//const thisProject = this.state.project.projectsData;
+render(){
 
-  const indexTotal = this.state.project.projectsDataEn.length;
-  console.log(indexTotal);
-
-const projectDetails = this.state.project.projectsDataEn.map((element) => {
-  return element.project.img
-});
-
+  // console.log(this.state.id);
+  const projects = this.state.allProjects.projectsDataEn;
+  // const id = this.state.id;
+  // console.log(this.state.allProjects.projectsDataEn[1].project.title)
+  // console.log(this.state.displayProject.project.title);
+  // console.log(projects[id]);
   return (
     <div className="flex flex-col">
-    {this.state.project.projectsDataEn.map((element) => {
-
-      return(
-      <ProjectContainer >
-        <ProjectBg  >
-          <Slider
-            path={element.project.img}
-            />
-          <div className="relative bg-white" >
-            <div className="flex flex-row bg-white relative w-100 h-auto py-0 pb-4">
-              <div className="p-1.5">
-                <div className="rounded-full border-solid border-2 border-black p-1 my-auto mt-0 mb-0 relative min-w-max ">
-                  <div className=" text-sans text-sm font-bold sm:text-2xl leading-none sm:leading-8 py-0.5 px-3 ">
-                    {element.id + 1 }
-                  </div>
+      <div class="flex justify-center">
+        <DropdownMenu projects = {this.state.allProjects.projectsDataEn} updateProject={this.handleChangeProject}/>
+      </div>
+        <div className="">
+          <div className="z-50 absolute bottom-0 left-0 bg-white w-full mb-1 px-2" >
+            <ProjectInfo details={this.state.displayProject.project}/>
+          </div>
+          <Slider path={this.state.displayProject.project.img}/>
+            <div className="flex flex-row z-10 bg-white relative w-full h-auto py-0 pb-1">
+              <div className="pt-1.5 pr-3 pl-2 bg-white ">
+                <div className=" items-center font-normal text-sans text-md m-auto ml-0 mt-0 item-center leading-none justify-start sm:pl-2 sm:text-3xl sm:leading-8">
                 </div>
               </div>
-              <div className="py-1.5 pr-3">
-                <ProjectTitle className=" font-medium text-sans text-md m-auto ml-0 mt-0 p-1.5 item-center leading-none justify-start sm:pl-5 sm:text-2xl sm:leading-8">
-                  {element.project.title}
-                  <button className="ml-2 text-xs sm:text-lg text-black relative" onClick={this.showHideComponent}>{this.state.showHideProjectDetails ? "Less" : "More"}</button>
-                  {this.state.showHideProjectDetails ?
-                  <ProjectSecondary className="m-auto mb-1 ">
-                    <ProjectDescribtion className="font-light text-sans mb-1 text-sm sm:text-lg leading-none sm:leading-none">
-                      {element.project.description}
-                    </ProjectDescribtion>
-                  </ProjectSecondary>
-                  : "" }
-                </ProjectTitle>
-              </div>
-              {/*<ProjectData className="">
-                <ProjectDataTop className="flex flex-col mt-0 mb-0 pt-1 w-24  sm:w-48 sm:min-wm-max text-xs sm:text-sm leading-none sm:leading-4 text-right">
-                  <ProjectYear className= " pl-2 sm:pl-2 pr-1 sm:pr2">
-                    {element.project.year}
-                  </ProjectYear>
-                  <ProjectCategory className= " pl-2 sm:pl-2 pr1 sm:pr2">
-                    {element.project.category}
-                  </ProjectCategory>
-                  <ProjectDimensions className=" pl-2 sm:pl-2 pr1 sm:pr2 ">
-                    {element.project.info}
-                  </ProjectDimensions>
-                </ProjectDataTop>
-              </ProjectData>*/}
-            </div>
           </div>
-        </ProjectBg>
-      </ProjectContainer>
-      )
-      })
-      }
+        </div>
       </div>
       )
     }

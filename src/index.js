@@ -7,7 +7,7 @@ import './i18n';
 
 import './styles/index.scss';
 import './styles/components/navigation.scss';
-import './styles/components/carousel.scss';
+//import './styles/components/carousel.scss';
 import './styles/components/project.scss';
 import './styles/components/footer.scss';
 import './styles/components/projects.scss';

@@ -57,7 +57,7 @@ render(){
         <DropdownMenu projects = {this.state.allProjects.projectsDataEn} updateProject={this.handleChangeProject}/>
       </div>
         <div className="">
-          <div className="z-50 absolute bottom-0 left-0 bg-white w-full mb-1 px-2" >
+          <div className="z-50 absolute bottom-0 sm:bottom-0 left-0 bg-white w-full mb-1 px-2" >
             <ProjectInfo details={this.state.displayProject.project}/>
           </div>
           <Slider path={this.state.displayProject.project.img}/>
@@ -66,6 +66,7 @@ render(){
                 <div className=" items-center font-normal text-sans text-md m-auto ml-0 mt-0 item-center leading-none justify-start sm:pl-2 sm:text-3xl sm:leading-8">
                 </div>
               </div>
+
           </div>
         </div>
       </div>

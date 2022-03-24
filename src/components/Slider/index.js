@@ -18,7 +18,7 @@ export default function Slider (props) {
       <AnimatePresence  initial={false} custom={direction}>
         <motion.img
           key={page}
-          className="p-2 rounded-xl absolute h-149 w-screen object-cover"
+          className="p-2 rounded-xl absolute h-full  w-screen object-cover"
           src={images[imageIndex]}
           custom={direction}
           initial={{ opacity: 0 }}
@@ -33,7 +33,7 @@ export default function Slider (props) {
         />
       </AnimatePresence>
       <div
-        className="absolute bottom-10 sm:bottom-32 w-screen px-2 pb-2 flex flex-row justify-between z-20">
+        className="absolute bottom-10 sm:bottom-10 w-screen px-2 py-2 flex flex-row bg-white justify-between z-20">
         <motion.button
             className="">
           <text

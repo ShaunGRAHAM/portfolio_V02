@@ -51,7 +51,7 @@ render(){
             "absolute
              bottom-1 sm:bottom-4
              left-0 sm:left-20
-             w-full sm:w-fit
+             w-full sm:w-80
              rounded-none sm:rounded-xl
              mb-1 sm:mb-0
              px-2 sm:px-0

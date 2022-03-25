@@ -25,7 +25,7 @@ export default function Slider (props) {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{x: {type: 'spring', stiffness: 300, damping: 30},
-         opacity: {duration: 0}
+         opacity: {duration: 0.2}
          }}
           drag="x"
           dragConstraints={{left: 0, right: 0}}
@@ -33,26 +33,62 @@ export default function Slider (props) {
         />
       </AnimatePresence>
       <div
-        className="absolute bottom-10 sm:bottom-10 w-screen px-2 py-2 flex flex-row bg-white justify-between z-20">
+        className=
+          "px-2 sm:px-4
+           py-2
+           flex flex-row
+           w-screen
+           absolute
+           bottom-11 sm:bottom-3
+           justify-between
+           bg-white sm:bg-transparent
+           z-20
+           ">
         <motion.button
             className="">
           <text
             onClick={() => paginate(-1)}
-            className="rounded-full bg-gray-100 transition ease-in-out duration-300 hover:bg-black hover:text-white hover:font-medium text-sans text-xs font-light text-black py-1 px-2">
+            className=
+              "px-2 sm:px-2
+               py-1
+               rounded-full
+               bg-gray-100 hover:bg-black sm:bg-white
+               transition ease-in-out delay-150 duration-150
+               border-solid
+               border-0 sm:border-2
+               text-black hover:text-white
+               font-light hover:font-medium
+               hover:border-white
+               text-sans
+               text-xs sm:text-sm
+               "
+               >
             PREV
           </text>
         </motion.button>
         <motion.button
             className="">
-         <text
-            onClick={() => paginate(+1)}
-            className="rounded-full bg-gray-100 transition ease-in-out delay-150 duration-150 hover:bg-black hover:text-white hover:font-medium text-sans text-xs font-light text-black py-1 px-2">
-            NEXT
-          </text>
+           <text
+              onClick={() => paginate(+1)}
+              className=
+                "px-2 sm:px-2
+                 py-1
+                 rounded-full
+                 bg-gray-100 hover:bg-black sm:bg-white
+                 transition ease-in-out delay-150 duration-150
+                 border-solid
+                 border-0 sm:border-2
+                 text-black hover:text-white
+                 font-light hover:font-medium
+                 hover:border-white
+                 text-sans
+                 text-xs sm:text-sm
+                 ">
+              NEXT
+            </text>
         </motion.button>
       </div>
       </>
-
     </div>
   )
 }

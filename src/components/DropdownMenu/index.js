@@ -22,7 +22,7 @@ class DropdownMenu extends Component {
 
   render () {
       return (
-          <div className="absolute top-3 right-3 z-10">
+          <div className="absolute top-3 right-3 z-50">
             <Menu as="div" className="relative inline-block text-left">
               <div>
                 <Menu.Button className="inline-flex items-center justify-center w-full px-4 py-2 border-solid border-2 border-black text-sm font-medium text-black bg-white rounded-full transition ease-in-out delay-150 duration-150 hover:bg-black hover:text-white hover:border-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">

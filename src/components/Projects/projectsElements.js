@@ -48,12 +48,12 @@ import styled from 'styled-components'
 
   `;
 
-  export const ProjectDetails = styled.div`
-  font-size: 14px;
-  font-family: 'PublicSans';
-  font-weight: 400;
-  color: lightgrey;
-  `;
+  // export const ProjectDetails = styled.div`
+  // font-size: 14px;
+  // font-family: 'PublicSans';
+  // font-weight: 400;
+  // color: lightgrey;
+  // `;
 
 
 

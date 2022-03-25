@@ -11,15 +11,21 @@ class ProjectDetails extends React.Component {
   render() {
     return (
       <div className="w-full sm:w-fit ">
-      <div className="w-full sm:w-fit max-w-md mx-auto bg-white rounded-2xl sm:rounded-md">
+      <div className=
+        "w-full sm:w-fit
+         max-w-md sm:max-w-xs
+         mx-auto sm:mx-0
+         bg-transparent sm:bg-white
+         rounded-2xl sm:rounded-md
+         ">
         <Disclosure>
           {({ open }) => (
             <>
               <Disclosure.Button
                 className=" flex flex-row
-                            w-full sm:w-fit
+                            w-fit sm:w-fit
                             pl-2 sm:pl-4
-                            pr-6
+                            pr-6 sm:pr-4
                             py-2
                             mt-2
                             text-sm

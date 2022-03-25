@@ -10,7 +10,7 @@ class ProjectDetails extends React.Component {
 
   render() {
     return (
-      <div className="w-full sm:w-fit ">
+      <div className="w-full sm:w-fit z-40">
       <div className=
         "w-full sm:w-fit
          max-w-md sm:max-w-xs

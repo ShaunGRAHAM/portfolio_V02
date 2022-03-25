@@ -56,7 +56,7 @@ render(){
              mb-1 sm:mb-0
              px-2 sm:px-0
              bg-white sm:bg-transparent
-             z-40" >
+             z-30" >
           <ProjectDetails details={this.state.displayProject.project}/>
         </div>
         <Slider path={this.state.displayProject.project.img}/>

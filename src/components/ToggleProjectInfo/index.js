@@ -43,8 +43,21 @@ class ProjectDetails extends React.Component {
                   } w-5 h-5 text-black-500`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-                {this.props.details.description}
+              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-600">
+                <div className="py-1">
+                  {this.props.details.description}
+                </div>
+                <div className="py-1 rounded-full flex-col text-xs text-gray-400">
+                  <div className="flex">
+                    {this.props.details.year}
+                  </div>
+                  <div className="flex">
+                    {this.props.details.info}
+                  </div>
+                  <div className="flex">
+                    {this.props.details.category}
+                  </div>
+                </div>
               </Disclosure.Panel>
             </>
           )}

@@ -38,6 +38,7 @@ const Home = () => {
             flex-col
             m-auto
             pt-14 sm:pt-14
+            pb-14 sm:pb-14
             p-4 sm:p-4">
             <div className="px-2 text-l sm:text-2xl text-black font-normal text-sans rounded-full transition ease-in-out delay-150 duration-150 hover:text-gray-300 ">
               <a className="px-1" href="https://dune.xyz/shoouunn/Decentral-Games-Polygon">Decentral Game on Polygon</a>
